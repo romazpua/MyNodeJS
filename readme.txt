@@ -1,1 +1,1 @@
-https://metanit.com/web/nodejs/2.1.php
+https://metanit.com/web/nodejs/2.4.php

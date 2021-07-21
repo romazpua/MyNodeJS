@@ -1,10 +1,11 @@
 let currentDate = new Date()
-module.exports.date = currentDate
 
-module.exports.getMessage = function (name) {
+global.date = currentDate
+
+module.exports.getMessage = function (){
     let hour = currentDate.getHours()
-    if (hour > 16)
-        return 'Good evening, ' + name
+    if(hour > 16)
+        return 'Good evening, ' + global.name
     else if (hour > 10)
         return 'Good day, ' + name
     else

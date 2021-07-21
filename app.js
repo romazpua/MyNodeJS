@@ -1,6 +1,7 @@
 const http = require('http')
 const os = require('os')
 const greeting = require('./greeting')
+const welcome = require('./welcome')
 
 http.createServer(function (request, response) {
     response.end('Hello NodeJS!')
@@ -8,8 +9,13 @@ http.createServer(function (request, response) {
     console.log('The server started listening for requests on port 3000')
 })
 
-// Get the name of the current user
-let userName = os.userInfo().username
 
-console.log(`Date of the inquiry: ${greeting.date}`)
-console.log(greeting.getMessage(userName))
+// Passing parameters to the application (node app <name> <age>)
+// let nodePath = process.argv[0]
+// let appPath = process.argv[1]
+// let name = process.argv[2]
+// let age = process.argv[3]
+// console.log("nodePath: " + nodePath);
+// console.log("appPath: " + appPath);
+// console.log("name: " + name);
+// console.log("age: " + age);
